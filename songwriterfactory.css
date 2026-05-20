@@ -1,4 +1,4 @@
-body {margin:10px;padding:0px;background:#000;font:10.5px arial,helvetica,sans-serif;color:#fff; font-style:none;}
+body {margin:10px;padding:0px;background:#000;font:12px arial,helvetica,sans-serif;color:#fff; font-style:none;}
 
 a:link {color:#FFFF00; text-decoration:none;}
 a:hover {color:#FFFFFF; text-decoration:none;}
@@ -7,4 +7,4 @@ a:active {color:#FFFF00; text-decoration:none;}
 
 .title {color:#FFFF00;}
 
-td {font:10px arial,helvetica,sans-serif;color:#fff; letter-spacing: 2px; line-height:150%; line-space:120%;}
+td {font:12px arial,helvetica,sans-serif;color:#fff; letter-spacing: 2px; line-height:150%; line-space:120%;}
