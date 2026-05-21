@@ -137,3 +137,24 @@ h3 {
     text-align: left !important;
 	padding-bottom: 20px
 }
+
+.production-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #000; /* Solid black for clarity */
+    font-weight: 700; /* Bold makes it "pop" just enough to be noticed */
+    position: relative;
+    padding-bottom: 2px; /* Space between text and line */
+    transition: color 0.3s ease;
+}
+
+/* Permanent underline so it's always clear it's a link */
+.production-link {
+    border-bottom: 2px solid #000; 
+}
+
+/* Subtle hover interaction */
+.production-link:hover {
+    color: #555;
+    border-bottom: 2px solid #555;
+}
