@@ -128,3 +128,15 @@ h3 {
         padding-right: 15px;
     }
 }
+
+/* Align lists with the bio text */
+ul, ol {
+    margin: 0 !important;
+    padding-left: 20px !important; /* Adjust this value to match your bio text indent exactly */
+}
+
+/* Ensure the bio text has a matching container offset */
+.bio-text {
+    margin: 0 !important;
+    padding: 0 15px !important; /* Ensure this matches the padding you gave your lists */
+}
