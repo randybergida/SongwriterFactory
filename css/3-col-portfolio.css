@@ -207,3 +207,8 @@ h3 {
         text-align: center;
     }
 }
+@media (max-width: 767px) {
+    .portfolio-item {
+        margin-bottom: 40px !important; /* Adds space between the columns when they stack */
+    }
+}
