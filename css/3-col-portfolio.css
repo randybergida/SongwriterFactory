@@ -91,9 +91,23 @@ footer {
     }
 }
 
+/* Base size for headers */
 h3 {
     font-size: 1.8rem;
-    color: #ffc107; /* This is the standard Bootstrap yellow/gold—adjust if your original was a different shade */
     line-height: 1.2;
     margin-bottom: 1.5rem;
+}
+
+/* Mobile: Force black for your b&w mobile theme */
+@media (max-width: 479px) {
+    h3 {
+        color: #000 !important;
+    }
+}
+
+/* Desktop: Use your verified brand yellow */
+@media (min-width: 480px) {
+    h3 {
+        color: #FFFF00 !important;
+    }
 }
