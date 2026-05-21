@@ -165,16 +165,16 @@ h3 {
     }
 }
 
-/* Force the row to use flexbox for top-alignment */
+/* Ensure the parent row allows sticky behavior */
 .row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-/* Ensure the portfolio items don't have stray bottom margins pushing them down */
-.portfolio-item {
-    margin-bottom: 0px;
-    position: relative;
-    float: none; /* Flexbox overrides float */
+/* This targets ONLY the contact/home column */
+.portfolio-item:last-child {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* This keeps it 20px from the top of the browser window */
 }
