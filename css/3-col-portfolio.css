@@ -90,3 +90,10 @@ footer {
         color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
     }
 }
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem; /* Adds a bit of breathing room below the title */
+    color: #fff;           /* Keeping them bright helps them pop on the dark background */
+}
