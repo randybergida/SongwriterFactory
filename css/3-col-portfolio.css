@@ -111,3 +111,20 @@ h3 {
         color: #FFFF00 !important;
     }
 }
+
+/* Force left alignment for bio and list sections everywhere */
+.bio-text, 
+.row, 
+.portfolio-item {
+    text-align: left !important;
+}
+
+/* If you still want the headers to look centered specifically on mobile, 
+   we can keep them separate, but this will fix the messy-looking bio text */
+@media (max-width: 479px) {
+    .bio-text {
+        text-align: left !important;
+        padding-left: 15px;  /* Adds a little space so text doesn't touch the screen edge */
+        padding-right: 15px;
+    }
+}
