@@ -138,23 +138,26 @@ h3 {
 	padding-bottom: 20px
 }
 
+/* Base styles: Default to black for light/mobile backgrounds */
 .production-link {
     display: inline-block;
     text-decoration: none;
-    color: #000; /* Solid black for clarity */
-    font-weight: 700; /* Bold makes it "pop" just enough to be noticed */
-    position: relative;
-    padding-bottom: 2px; /* Space between text and line */
-    transition: color 0.3s ease;
+    color: #000; 
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000;
+    transition: all 0.3s ease;
 }
 
-/* Permanent underline so it's always clear it's a link */
-.production-link {
-    border-bottom: 2px solid #000; 
-}
-
-/* Subtle hover interaction */
-.production-link:hover {
-    color: #555;
-    border-bottom: 2px solid #555;
+/* Desktop override: Switches to your #FFFF00 yellow for dark backgrounds */
+@media (min-width: 480px) {
+    .production-link {
+        color: #FFFF00; 
+        border-bottom: 2px solid #FFFF00;
+    }
+    
+    .production-link:hover {
+        color: #ffffff; /* White hover for a clean transition */
+        border-bottom: 2px solid #ffffff;
+    }
 }
