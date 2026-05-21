@@ -70,3 +70,7 @@ footer {
 	display:block;
 }
 }
+.bio-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
