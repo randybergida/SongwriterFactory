@@ -178,3 +178,14 @@ h3 {
     position: sticky;
     top: 20px; /* This keeps it 20px from the top of the browser window */
 }
+
+/* Remove top margin from the first element in BOTH columns */
+.portfolio-item *:first-child {
+    margin-top: 0 !important;
+}
+
+/* If the CONTACT header still needs a little breathing room, 
+   add it as padding to the column itself, not as a margin on the text */
+.portfolio-item:last-child {
+    padding-top: 0 !important;
+}
