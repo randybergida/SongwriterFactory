@@ -71,28 +71,22 @@ footer {
 }
 }
 
-/* Global text adjustments for readability */
-p {
+.bio-text {
     font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: 0.5px;
 }
 
-.inventory {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
-}
-
-/* Color adjustments to handle the background switch */
+/* Mobile: White background (from bootstrap), so text must be black */
 @media (max-width: 479px) {
-    p, .inventory {
+    .bio-text {
         color: #000;
     }
 }
 
+/* Desktop: Black background (from bootstrap), so text must be white/light gray */
 @media (min-width: 480px) {
-    p, .inventory {
-        color: #ddd;
+    .bio-text {
+        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
     }
 }
