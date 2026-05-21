@@ -135,4 +135,5 @@ h3 {
 /* Force bio text to be left-aligned on all screen sizes */
 .bio-text {
     text-align: left !important;
+	padding-bottom: 20px
 }
