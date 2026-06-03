@@ -213,23 +213,24 @@ h3 {
     }
 }
 
-/* Add this to your existing header styles */
+/* Updated H2 style: Larger, bold, and matches bio text color */
 h2 {
-    font-size: 1.8rem; /* Slightly larger than your h3 */
+    font-size: 1.8rem;
     line-height: 1.2;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
-/* Mobile: Force black for your b&w mobile theme */
+/* Mobile: Force black to match mobile bio text */
 @media (max-width: 479px) {
     h2 {
         color: #000 !important;
     }
 }
 
-/* Desktop: Use your verified brand yellow */
+/* Desktop: Use the same color as your bio-text (#ddd) */
 @media (min-width: 480px) {
     h2 {
-        color: #FFFF00 !important;
+        color: #ddd !important;
     }
 }
