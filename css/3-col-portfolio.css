@@ -293,12 +293,14 @@ footer .col-lg-12 {
     }
 }
 
-/* Constraint for Bio/Contact section during the landscape/skinny phase */
+/* Constrain the entire contents of the left column to a readable, centered block */
 @media (min-width: 480px) and (max-width: 991px) {
-    .bio-text {
-        max-width: 600px; /* Limits the readable line length */
+    .col-md-7.portfolio-item {
+        max-width: 600px;
         margin-left: auto;
-        margin-right: auto; /* Keeps the text block centered if you prefer */
-        padding: 0 20px; /* Adds breathing room on the sides */
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        float: none; /* Crucial: removes the float so margin: auto works to center it */
     }
 }
