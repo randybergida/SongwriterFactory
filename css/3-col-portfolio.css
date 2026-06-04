@@ -288,7 +288,4 @@ footer .col-lg-12 {
     }
 }
 
-/* Force the background to stay black everywhere */
-body {
-    background-color: #000 !important;
-}
+
