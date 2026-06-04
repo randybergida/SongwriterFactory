@@ -259,3 +259,16 @@ h2, .bio-bridge {
         display: inline-block !important; /* Keeps the box tight to the content */
     }
 }
+
+/* Force the footer to stay centered and stable */
+footer .row {
+    text-align: center !important;
+    display: block !important;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+footer .col-lg-12 {
+    display: inline-block !important;
+    float: none !important;
+}
