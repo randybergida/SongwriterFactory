@@ -24,24 +24,7 @@ text-align:center;
 text-align:left;
 }
 }
-.production {
-text-align:center;
-font-size:24px;
-padding-top:25px;
-}
-.production a {
-color:#000;
-}
-@media (min-width: 480px) {
-.production {
-text-align:center;
-font-size:24px;
-padding-top:186px;
-}
-.production a {
-color:#ffff00;
-}
-}
+
 @media (min-width: 768px) {
 .production {
 text-align:left;
@@ -303,4 +286,9 @@ footer .col-lg-12 {
         padding-right: 20px;
         float: none; /* Crucial: removes the float so margin: auto works to center it */
     }
+}
+
+/* Force the background to stay black everywhere */
+body {
+    background-color: #000 !important;
 }
