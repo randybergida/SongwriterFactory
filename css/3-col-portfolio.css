@@ -236,8 +236,8 @@ h2 {
 }
 
 .bio-bridge {
-    margin-top: 30px;      /* Increased top space for separation */
-    margin-bottom: 20px;   /* Increased space before buttons */
+    margin-top: 20px;      /* Increased top space for separation */
+    margin-bottom: 30px;   /* Increased space before buttons */
     font-size: 1.6rem;     /* Slightly larger than standard bio text */
     font-weight: bold;     /* Added emphasis */
     color: #333;           /* Default for mobile */
