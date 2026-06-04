@@ -262,21 +262,16 @@ h2, .bio-bridge {
 
 /* Force the footer to stay centered and stable */
 
-/* Mobile: Let the theme's default responsive behavior handle the layout */
+/* Footer Fix: Reset global flex and enforce centering */
 footer .row {
+    display: block !important;
     text-align: center !important;
+    float: none !important;
+    margin: 0 auto !important;
 }
 
-/* Desktop: Force the centering and prevent wrapping only when screen is wide */
-@media (min-width: 992px) {
-    footer .row {
-        text-align: center !important;
-        display: block !important;
-    }
-    
-    footer .col-lg-12 {
-        display: inline-block !important;
-        float: none !important;
-        white-space: nowrap !important;
-    }
+footer .col-lg-12 {
+    display: inline-block !important;
+    float: none !important;
+    white-space: nowrap !important;
 }
