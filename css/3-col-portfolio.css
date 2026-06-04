@@ -245,22 +245,15 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* 1. Default: Center all portfolio items */
+    /* 1. Ensure all standard columns are centered */
     .portfolio-item {
         text-align: center !important;
         margin-bottom: 40px !important;
-        float: none !important;
     }
 
-    /* 2. Override: Force ONLY the contact column to be left-aligned */
+    /* 2. Apply your specific 'left-align text' logic ONLY to the contact column */
     .contact-column {
-        text-align: left !important;
-    }
-
-    /* 3. Keep inventory looking clean */
-    .inventory {
-        display: block;
-        margin-bottom: 20px;
-        text-align: left;
+        text-align: left !important; /* This is the specific rule that worked for you */
+        display: block !important;
     }
 }
