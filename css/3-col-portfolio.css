@@ -262,12 +262,15 @@ h2, .bio-bridge {
 
 /* Force the footer to stay centered and stable */
 
-footer .row {
-    text-align: center !important;
-}
+/* Only apply the footer stability on larger screens (Desktop) */
+@media (min-width: 768px) {
+    footer .row {
+        text-align: center !important;
+    }
 
-footer .col-lg-12 {
-    display: inline-block !important;
-    float: none !important;
-    white-space: nowrap !important; /* This is the "magic" line that stops the wrapping */
+    footer .col-lg-12 {
+        display: inline-block !important;
+        float: none !important;
+        white-space: nowrap !important;
+    }
 }
