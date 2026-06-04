@@ -236,19 +236,16 @@ h2 {
 }
 
 .bio-bridge {
-    margin-top: 25px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #333; /* Default black-ish for mobile */
+    margin-top: 30px;      /* Increased top space for separation */
+    margin-bottom: 20px;   /* Increased space before buttons */
+    font-size: 1.6rem;     /* Slightly larger than standard bio text */
+    font-weight: bold;     /* Added emphasis */
+    color: #333;           /* Default for mobile */
 }
 
-.bio-navigation {
-    margin-bottom: 30px;
-}
-
-/* Desktop override: Switch text color to light gray for dark backgrounds */
+/* Desktop override */
 @media (min-width: 480px) {
     .bio-bridge {
-        color: #ddd;
+        color: #ddd;       /* Matches your bio-text desktop color */
     }
 }
