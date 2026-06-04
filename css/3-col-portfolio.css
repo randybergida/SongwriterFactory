@@ -285,8 +285,9 @@ footer .col-lg-12 {
 }
 
 
+/* This targets ONLY the three lesson columns */
 @media (min-width: 480px) {
-    .portfolio-item {
+    .three-col-item {
         width: 33.333333% !important;
         float: left !important;
     }
