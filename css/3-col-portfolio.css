@@ -283,3 +283,11 @@ footer .col-lg-12 {
         display: inline-block !important;
     }
 }
+
+
+@media (min-width: 480px) {
+    .portfolio-item {
+        width: 33.333333% !important;
+        float: left !important;
+    }
+}
