@@ -249,34 +249,25 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* 1. Layout: Stack columns and center the blocks themselves */
+    /* 1. Reset the row to stop using floats */
     .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block; /* Disable flex for now to stop float interference */
     }
 
-    /* 2. Portfolio Items: Centered blocks with left-aligned text */
+    /* 2. Reset the columns so they stack and center */
     .portfolio-item {
-        margin-bottom: 40px !important;
-        width: 100%;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: left;
-    }
-
-    /* 3. Inventory: Ensure it remains distinct */
-    .inventory {
+        float: none !important; /* This is the key: remove the float */
         display: block;
-        margin-bottom: 20px;
-        text-align: left;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100%;
+        max-width: 400px; /* Limits the width so it doesn't stretch too wide */
+        text-align: left; /* Keeps your text aligned left inside the centered block */
+        padding: 0 15px;
     }
 
-    /* 4. Footer: Center the footer specifically */
+    /* 3. Footer alignment */
     footer .row {
-        display: flex;
-        justify-content: center;
         text-align: center;
     }
 }
