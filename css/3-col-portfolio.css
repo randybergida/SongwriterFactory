@@ -261,14 +261,13 @@ h2, .bio-bridge {
 }
 
 /* Force the footer to stay centered and stable */
+
 footer .row {
     text-align: center !important;
-    display: block !important;
-    margin: 0 auto !important;
-    float: none !important;
 }
 
 footer .col-lg-12 {
     display: inline-block !important;
     float: none !important;
+    white-space: nowrap !important; /* This is the "magic" line that stops the wrapping */
 }
