@@ -242,24 +242,33 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* 1. Reset row to normal block flow */
+    /* 1. Force row to stack naturally */
     .row {
         display: block !important;
+        float: none !important;
         text-align: center !important;
     }
 
-    /* 2. Force each column to be its own independent block */
+    /* 2. Force portfolio items to be centered blocks */
     .portfolio-item {
         float: none !important;
-        display: block !important; /* Forces a new line for each column */
-        width: 100% !important;
+        display: block !important;
+        
+        /* Centering the block */
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 40px !important;
+        
+        /* Sizing */
+        width: 85% !important;
         max-width: 400px !important;
-        margin: 0 auto 40px auto !important; /* Centers the block itself */
-        text-align: left !important;         /* Keeps the internal text left-aligned */
+        
+        /* Text alignment inside the block */
+        text-align: left !important;
         padding: 0 15px !important;
     }
 
-    /* 3. Ensure the footer remains centered */
+    /* 3. Ensure footer stays centered */
     footer .row {
         display: block !important;
         text-align: center !important;
