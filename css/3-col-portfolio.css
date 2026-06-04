@@ -16,14 +16,7 @@ body {
 footer {
     margin: 50px 0;
 }
-.row {
-	text-align:center;
-}
-@media (min-width: 768px) {
-	.row {
-	text-align:left;
-}
-}
+
 .production {
 	text-align:center;
 	font-size:24px;
@@ -249,25 +242,26 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* 1. Reset the row to stop using floats */
+    /* Reset row and force centering */
     .row {
-        display: block; /* Disable flex for now to stop float interference */
+        display: block !important;
+        text-align: center !important; /* This centers the items horizontally */
     }
 
-    /* 2. Reset the columns so they stack and center */
+    /* Force columns to stop floating and act like centered blocks */
     .portfolio-item {
-        float: none !important; /* This is the key: remove the float */
-        display: block;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        width: 100%;
-        max-width: 400px; /* Limits the width so it doesn't stretch too wide */
-        text-align: left; /* Keeps your text aligned left inside the centered block */
-        padding: 0 15px;
+        float: none !important;
+        display: inline-block !important; /* Allows text-align: center on row to work */
+        width: 100% !important;
+        max-width: 400px !important;
+        margin: 0 auto 40px auto !important; /* Centers block and adds bottom spacing */
+        text-align: left !important;         /* Keeps your text content left-aligned */
+        padding: 0 15px !important;
     }
 
-    /* 3. Footer alignment */
+    /* Ensure footer centers */
     footer .row {
-        text-align: center;
+        display: block !important;
+        text-align: center !important;
     }
 }
