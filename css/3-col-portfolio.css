@@ -165,39 +165,48 @@ h3 {
     }
 }
 
-/* Ensure the parent row allows sticky behavior */
+/* Ensure the parent row centers its children and aligns text left */
 .row {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
 }
 
-/* This targets ONLY the contact/home column */
-.portfolio-item:last-child {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 20px; /* This keeps it 20px from the top of the browser window */
+/* Style for all portfolio items */
+.portfolio-item {
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0 15px;
+    text-align: left;
 }
 
-/* Remove top margin from the first element in BOTH columns */
+/* Maintain sticky behavior for the contact column on desktop */
+@media (min-width: 768px) {
+    .portfolio-item:last-child {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+    }
+}
+
+/* Remove top margin from the first element in columns */
 .portfolio-item *:first-child {
     margin-top: 0 !important;
 }
 
-/* If the CONTACT header still needs a little breathing room, 
-   add it as padding to the column itself, not as a margin on the text */
-.portfolio-item:last-child {
-    padding-top: 0 !important;
-}
-
+/* Mobile: Center the column blocks but keep content left-aligned */
 @media (max-width: 767px) {
-    /* Center the Contact Column */
+    .portfolio-item {
+        margin-bottom: 40px !important;
+        max-width: 100%;
+        text-align: left;
+    }
+    
     .portfolio-item:last-child {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
         margin: 0 auto;
+        text-align: left;
     }
 
     /* Center the Footer */
@@ -205,11 +214,6 @@ h3 {
         display: flex;
         justify-content: center;
         text-align: center;
-    }
-}
-@media (max-width: 767px) {
-    .portfolio-item {
-        margin-bottom: 40px !important; /* Adds space between the columns when they stack */
     }
 }
 
