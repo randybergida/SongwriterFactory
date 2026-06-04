@@ -245,15 +245,17 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* 1. Ensure all standard columns are centered */
+    /* 1. Default: Center all portfolio items */
     .portfolio-item {
         text-align: center !important;
         margin-bottom: 40px !important;
+        display: block !important;
     }
 
-    /* 2. Apply your specific 'left-align text' logic ONLY to the contact column */
+    /* 2. Target the contact container specifically */
     .contact-column {
-        text-align: left !important; /* This is the specific rule that worked for you */
-        display: block !important;
+        margin: 0 auto !important; /* Centers the box */
+        text-align: left !important; /* Forces the text to the left */
+        display: inline-block !important; /* Keeps the box tight to the content */
     }
 }
