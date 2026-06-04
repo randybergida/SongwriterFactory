@@ -260,18 +260,26 @@ h2, .bio-bridge {
     }
 }
 
-/* Force the footer to stay centered and stable */
-
-/* Footer Fix: Reset global flex and enforce centering */
+/* Footer: Universal stability */
 footer .row {
     display: block !important;
     text-align: center !important;
     float: none !important;
     margin: 0 auto !important;
+    padding: 0 !important; /* Forces the row to stay flush */
 }
 
+/* Mobile: Force the column to be a full-width block to ensure true center */
 footer .col-lg-12 {
-    display: inline-block !important;
+    display: block !important;
     float: none !important;
     white-space: nowrap !important;
+    padding: 0 !important;
+}
+
+/* Desktop: Revert to inline-block so it doesn't stretch and stays tight to text */
+@media (min-width: 768px) {
+    footer .col-lg-12 {
+        display: inline-block !important;
+    }
 }
