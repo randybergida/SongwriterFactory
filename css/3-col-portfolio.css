@@ -262,12 +262,18 @@ h2, .bio-bridge {
 
 /* Force the footer to stay centered and stable */
 
-/* Only apply the footer stability on larger screens (Desktop) */
-@media (min-width: 768px) {
+/* Mobile: Let the theme's default responsive behavior handle the layout */
+footer .row {
+    text-align: center !important;
+}
+
+/* Desktop: Force the centering and prevent wrapping only when screen is wide */
+@media (min-width: 992px) {
     footer .row {
         text-align: center !important;
+        display: block !important;
     }
-
+    
     footer .col-lg-12 {
         display: inline-block !important;
         float: none !important;
