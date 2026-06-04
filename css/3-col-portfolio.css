@@ -242,33 +242,28 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* 1. Force row to stack naturally */
+    /* 1. Force the row to stop acting like a grid */
     .row {
         display: block !important;
         float: none !important;
+        width: 100% !important;
         text-align: center !important;
     }
 
-    /* 2. Force portfolio items to be centered blocks */
+    /* 2. Force every column to center itself */
     .portfolio-item {
         float: none !important;
         display: block !important;
-        
-        /* Centering the block */
         margin-left: auto !important;
         margin-right: auto !important;
         margin-bottom: 40px !important;
-        
-        /* Sizing */
-        width: 85% !important;
-        max-width: 400px !important;
-        
-        /* Text alignment inside the block */
-        text-align: left !important;
+        width: 90% !important;        /* Makes it responsive */
+        max-width: 400px !important;  /* Prevents it from getting too wide */
+        text-align: left !important;  /* Keeps your text inside the box left-aligned */
         padding: 0 15px !important;
     }
 
-    /* 3. Ensure footer stays centered */
+    /* 3. Footer fixes */
     footer .row {
         display: block !important;
         text-align: center !important;
