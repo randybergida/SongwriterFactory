@@ -190,28 +190,7 @@ padding-bottom: 20px
     padding-top: 0 !important;
 }
 
-@media (max-width: 767px) {
-    /* Center the Contact Column */
-    .portfolio-item:last-child {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-    }
 
-    /* Center the Footer */
-    footer .row {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-}
-@media (max-width: 767px) {
-    .portfolio-item {
-        margin-bottom: 40px !important; /* Adds space between the columns when they stack */
-    }
-}
 
 /* Updated H2 style: Larger, bold, and matches bio text color */
 h2 {
@@ -266,25 +245,22 @@ h2, .bio-bridge {
 }
 
 @media (max-width: 767px) {
-    /* Keep the column content left-aligned, but align the container if needed */
-    .portfolio-item:last-child {
-        text-align: center !important; /* Changed from center to left */
-        display: block;              /* Removed flex centering */
+    /* 1. Default: Center all portfolio items */
+    .portfolio-item {
+        text-align: center !important;
+        margin-bottom: 40px !important;
+        float: none !important;
     }
-    
-    /* Keep inventory looking clean */
+
+    /* 2. Override: Force ONLY the contact column to be left-aligned */
+    .contact-column {
+        text-align: left !important;
+    }
+
+    /* 3. Keep inventory looking clean */
     .inventory {
         display: block;
         margin-bottom: 20px;
         text-align: left;
-    }
-     }
-
-@media (max-width: 767px) {
-    .portfolio-item {
-        margin-left: auto !important;
-        margin-right: auto !important;
-        float: none !important;
-        text-align: center !important; /* This centers the text inside the block */
     }
 }
