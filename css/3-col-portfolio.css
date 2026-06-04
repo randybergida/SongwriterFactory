@@ -1,271 +1,286 @@
 /*!
- * Start Bootstrap - 3 Col Portfolio HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+ * Start Bootstrap - 3 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
 body {
-    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .portfolio-item {
-    margin-bottom: 0px;
-	position:relative;
+    margin-bottom: 0px;
+position:relative;
 }
 
 footer {
-    margin: 50px 0;
+    margin: 50px 0;
 }
-
+.row {
+text-align:center;
+}
+@media (min-width: 768px) {
+.row {
+text-align:left;
+}
+}
 .production {
-	text-align:center;
-	font-size:24px;
-	padding-top:25px;
+text-align:center;
+font-size:24px;
+padding-top:25px;
 }
 .production a {
-	color:#000;
+color:#000;
 }
 @media (min-width: 480px) {
 .production {
-	text-align:center;
-	font-size:24px;
-	padding-top:186px;
+text-align:center;
+font-size:24px;
+padding-top:186px;
 }
 .production a {
-	color:#ffff00;
+color:#ffff00;
 }
 }
 @media (min-width: 768px) {
 .production {
-	text-align:left;
+text-align:left;
 }
 }
 .inventory {
-	color:#000;
-	}
+color:#000;
+}
 @media (min-width: 480px) {
-  .inventory {
-	color:#ffff00;
-	text-align:center;
+  .inventory {
+color:#ffff00;
+text-align:center;
 }
 }
 .mobile {
-	display:block;
+display:block;
 }
 .desktop {
-	display:none;
+display:none;
 }
 @media (min-width: 480px) {
-  .mobile {
-	display:none;
+  .mobile {
+display:none;
 }
 .desktop {
-	display:block;
+display:block;
 }
 }
 
 .bio-text {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
 /* Mobile: White background (from bootstrap), so text must be black */
 @media (max-width: 479px) {
-    .bio-text {
-        color: #000;
-    }
+    .bio-text {
+        color: #000;
+    }
 }
 
 /* Desktop: Black background (from bootstrap), so text must be white/light gray */
 @media (min-width: 480px) {
-    .bio-text {
-        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
-    }
+    .bio-text {
+        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
+    }
 }
 
 .other-text {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    letter-spacing: 0.5px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
 }
 
 /* Mobile: White background (from bootstrap), so text must be black */
 @media (max-width: 479px) {
-    .other-text {
-        color: #000;
-    }
+    .other-text {
+        color: #000;
+    }
 }
 
 /* Desktop: Black background (from bootstrap), so text must be white/light gray */
 @media (min-width: 480px) {
-    .other-text {
-        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
-    }
+    .other-text {
+        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
+    }
 }
 
 /* Base size for headers */
 h3 {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
 }
 
 /* Mobile: Force black for your b&w mobile theme */
 @media (max-width: 479px) {
-    h3 {
-        color: #000 !important;
-    }
+    h3 {
+        color: #000 !important;
+    }
 }
 
 /* Desktop: Use your verified brand yellow */
 @media (min-width: 480px) {
-    h3 {
-        color: #FFFF00 !important;
-    }
+    h3 {
+        color: #FFFF00 !important;
+    }
 }
 
 /* Force bio text to be left-aligned on all screen sizes */
 .bio-text {
-    text-align: left !important;
-	padding-bottom: 20px
+    text-align: left !important;
+padding-bottom: 20px
 }
 
 /* Base styles: Default to black for light/mobile backgrounds */
 .production-link {
-    display: inline-block;
-    text-decoration: none;
-    color: #000; 
-    font-weight: 700;
-    font-size: 1.5rem;
-    border-bottom: 2px solid #000;
-    transition: all 0.3s ease;
-    
-    /* These provide the spacing you need */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000; 
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000;
+    transition: all 0.3s ease;
+    
+    /* These provide the spacing you need */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* Desktop override: Switches to your #FFFF00 yellow for dark backgrounds */
 @media (min-width: 480px) {
-    .production-link {
-        color: #FFFF00; 
-        border-bottom: 2px solid #FFFF00;
-    }
-    
-    .production-link:hover {
-        color: #ffffff; /* White hover for a clean transition */
-        border-bottom: 2px solid #ffffff;
-    }
+    .production-link {
+        color: #FFFF00; 
+        border-bottom: 2px solid #FFFF00;
+    }
+    
+    .production-link:hover {
+        color: #ffffff; /* White hover for a clean transition */
+        border-bottom: 2px solid #ffffff;
+    }
 }
 
-/* Ensure the parent row centers its children and aligns text left */
+/* Ensure the parent row allows sticky behavior */
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
-/* Style for all portfolio items */
-.portfolio-item {
-    margin-bottom: 20px;
-    position: relative;
-    padding: 0 15px;
-    text-align: left;
+/* This targets ONLY the contact/home column */
+.portfolio-item:last-child {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* This keeps it 20px from the top of the browser window */
 }
 
-/* Maintain sticky behavior for the contact column on desktop */
-@media (min-width: 768px) {
-    .portfolio-item:last-child {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 20px;
-    }
-}
-
-/* Remove top margin from the first element in columns */
+/* Remove top margin from the first element in BOTH columns */
 .portfolio-item *:first-child {
-    margin-top: 0 !important;
+    margin-top: 0 !important;
 }
 
+/* If the CONTACT header still needs a little breathing room, 
+   add it as padding to the column itself, not as a margin on the text */
+.portfolio-item:last-child {
+    padding-top: 0 !important;
+}
+
+@media (max-width: 767px) {
+    /* Center the Contact Column */
+    .portfolio-item:last-child {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Center the Footer */
+    footer .row {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .portfolio-item {
+        margin-bottom: 40px !important; /* Adds space between the columns when they stack */
+    }
+}
 
 /* Updated H2 style: Larger, bold, and matches bio text color */
 h2 {
-    font-size: 1.8rem;
-    line-height: 1.2;
-    margin-bottom: 2rem;
-    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 /* Mobile: Force black to match mobile bio text */
 @media (max-width: 479px) {
-    h2 {
-        color: #000 !important;
-    }
+    h2 {
+        color: #000 !important;
+    }
 }
 
 /* Desktop: Use the same color as your bio-text (#ddd) */
 @media (min-width: 480px) {
-    h2 {
-        color: #ddd !important;
-    }
+    h2 {
+        color: #ddd !important;
+    }
 }
 
 .bio-bridge {
-    margin-top: 20px;      /* Increased top space for separation */
-    margin-bottom: 30px;   /* Increased space before buttons */
-    font-size: 1.6rem;     /* Slightly larger than standard bio text */
-    font-weight: bold;     /* Added emphasis */
-    color: #333;           /* Default for mobile */
+    margin-top: 20px;      /* Increased top space for separation */
+    margin-bottom: 30px;   /* Increased space before buttons */
+    font-size: 1.6rem;     /* Slightly larger than standard bio text */
+    font-weight: bold;     /* Added emphasis */
+    color: #333;           /* Default for mobile */
 }
 
 /* Desktop override */
 @media (min-width: 480px) {
-    .bio-bridge {
-        color: #ddd;       /* Matches your bio-text desktop color */
-    }
+    .bio-bridge {
+        color: #ddd;       /* Matches your bio-text desktop color */
+    }
 }
 
 /* Update your CSS to target the class combination */
 .row.row-divider {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Force H2 and Bio Bridge to left-align consistently */
 h2, .bio-bridge {
-    text-align: left !important;
+    text-align: left !important;
 }
 
 .bio-navigation {
-    text-align: left !important; /* Force left alignment */
+    text-align: left !important; /* Force left alignment */
 }
 
 @media (max-width: 767px) {
-    /* 1. Force the row to stop acting like a grid */
-    .row {
-        display: block !important;
-        float: none !important;
-        width: 100% !important;
-        text-align: center !important;
-    }
-
-    /* 2. Force every column to center itself */
-    .portfolio-item {
-        float: none !important;
-        display: block !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        margin-bottom: 40px !important;
-        width: 90% !important;        /* Makes it responsive */
-        max-width: 400px !important;  /* Prevents it from getting too wide */
-        text-align: left !important;  /* Keeps your text inside the box left-aligned */
-        padding: 0 15px !important;
-    }
-
-    /* 3. Footer fixes */
-    footer .row {
-        display: block !important;
-        text-align: center !important;
-    }
+    /* Keep the column content left-aligned, but align the container if needed */
+    .portfolio-item:last-child {
+        text-align: left !important; /* Changed from center to left */
+        display: block;              /* Removed flex centering */
+    }
+    
+    /* Keep inventory looking clean */
+    .inventory {
+        display: block;
+        margin-bottom: 20px;
+        text-align: left;
+    }
 }
+
+
+
+
+
