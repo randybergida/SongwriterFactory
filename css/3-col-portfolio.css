@@ -268,7 +268,7 @@ h2, .bio-bridge {
 @media (max-width: 767px) {
     /* Keep the column content left-aligned, but align the container if needed */
     .portfolio-item:last-child {
-        text-align: left !important; /* Changed from center to left */
+        text-align: center !important; /* Changed from center to left */
         display: block;              /* Removed flex centering */
     }
     
