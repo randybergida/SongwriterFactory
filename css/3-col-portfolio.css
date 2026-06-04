@@ -279,3 +279,12 @@ h2, .bio-bridge {
         text-align: left;
     }
      }
+
+@media (max-width: 767px) {
+    .portfolio-item {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+        text-align: center !important; /* This centers the text inside the block */
+    }
+}
