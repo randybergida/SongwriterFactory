@@ -4,8 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* --- GLOBAL DARK THEME --- */
 body {
-    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #000 !important;
+    padding-top: 0px; 
+}
+
+.bio-text, .other-text, .bio-bridge, .portfolio-item h2 {
+    color: #ddd !important;
 }
 
 .portfolio-item {
@@ -30,15 +36,12 @@ text-align:left;
 text-align:left;
 }
 }
+
 .inventory {
-color:#000;
+    color: #FFFF00 !important;
+    text-align: center;
 }
-@media (min-width: 480px) {
-  .inventory {
-color:#ffff00;
-text-align:center;
-}
-}
+
 .mobile {
 display:block;
 }
@@ -60,19 +63,7 @@ display:block;
     letter-spacing: 0.5px;
 }
 
-/* Mobile: White background (from bootstrap), so text must be black */
-@media (max-width: 479px) {
-    .bio-text {
-        color: #000;
-    }
-}
 
-/* Desktop: Black background (from bootstrap), so text must be white/light gray */
-@media (min-width: 480px) {
-    .bio-text {
-        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
-    }
-}
 
 .other-text {
     font-size: 1.4rem;
@@ -80,19 +71,6 @@ display:block;
     letter-spacing: 0.5px;
 }
 
-/* Mobile: White background (from bootstrap), so text must be black */
-@media (max-width: 479px) {
-    .other-text {
-        color: #000;
-    }
-}
-
-/* Desktop: Black background (from bootstrap), so text must be white/light gray */
-@media (min-width: 480px) {
-    .other-text {
-        color: #ddd; /* A soft off-white/light gray is easier on eyes than pure #fff */
-    }
-}
 
 /* Base size for headers */
 h3 {
@@ -101,19 +79,6 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
-/* Mobile: Force black for your b&w mobile theme */
-@media (max-width: 479px) {
-    h3 {
-        color: #000 !important;
-    }
-}
-
-/* Desktop: Use your verified brand yellow */
-@media (min-width: 480px) {
-    h3 {
-        color: #FFFF00 !important;
-    }
-}
 
 /* Force bio text to be left-aligned on all screen sizes */
 .bio-text {
@@ -127,7 +92,7 @@ padding-bottom: 20px
     text-decoration: none;
     color: #000; 
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     border-bottom: 2px solid #000;
     transition: all 0.3s ease;
     
@@ -135,18 +100,38 @@ padding-bottom: 20px
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/* Desktop override: Switches to your #FFFF00 yellow for dark backgrounds */
-@media (min-width: 480px) {
-    .production-link {
-        color: #FFFF00; 
-        border-bottom: 2px solid #FFFF00;
-    }
-    
-    .production-link:hover {
-        color: #ffffff; /* White hover for a clean transition */
-        border-bottom: 2px solid #ffffff;
-    }
+
+.production-link {
+    color: #FFFF00; 
+    border-bottom: 2px solid #FFFF00;
 }
+
+.production-link:hover {
+    color: #ffffff; 
+    border-bottom: 2px solid #ffffff;
+}
+
+
+.nav-link {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem; /* Adjust this to make it smaller or larger */
+    transition: all 0.3s ease;
+    
+    /* Colors */
+    color: #FFFF00; 
+    border-bottom: 2px solid #FFFF00;
+}
+
+.nav-link:hover {
+    color: #ffffff; 
+    border-bottom: 2px solid #ffffff;
+}
+
+
+
 
 /* Ensure the parent row allows sticky behavior */
 .row {
@@ -175,43 +160,31 @@ padding-bottom: 20px
 
 
 
-/* Updated H2 style: Larger, bold, and matches bio text color */
-h2 {
-    font-size: 1.8rem;
+/* This targets all H2s inside portfolio items on all pages */
+.portfolio-item h2 {
+    font-size: 1.5rem !important;
     line-height: 1.2;
     margin-bottom: 2rem;
     font-weight: bold;
 }
 
-/* Mobile: Force black to match mobile bio text */
-@media (max-width: 479px) {
-    h2 {
-        color: #000 !important;
-    }
-}
 
-/* Desktop: Use the same color as your bio-text (#ddd) */
-@media (min-width: 480px) {
-    h2 {
-        color: #ddd !important;
-    }
-}
 
 .bio-bridge {
     margin-top: 20px;      /* Increased top space for separation */
     margin-bottom: 30px;   /* Increased space before buttons */
-    font-size: 1.6rem;     /* Slightly larger than standard bio text */
+    font-size: 1.5rem;     /* Slightly larger than standard bio text */
     font-weight: bold;     /* Added emphasis */
-    color: #333;           /* Default for mobile */
+    color: #ddd;           /* Default for mobile */
 }
 
-/* Desktop override */
-@media (min-width: 480px) {
-    .bio-bridge {
-        color: #ddd;       /* Matches your bio-text desktop color */
-    }
+.bio-bridge2 {
+    margin-top: 30px;      /* Extra space specifically for the sidebar */
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ddd;
 }
-
 /* Update your CSS to target the class combination */
 .row.row-divider {
     margin-top: 40px;
@@ -288,4 +261,25 @@ footer .col-lg-12 {
     }
 }
 
+/* --- GLOBAL DARK THEME FIXES --- */
+
+/* Force all text in the portfolio items to be your light gray */
+.portfolio-item, .portfolio-item p {
+    color: #ddd !important;
+}
+
+/* Ensure links (phone/email/etc) are yellow by default */
+a {
+    color: #FFFF00 !important;
+}
+
+/* On desktop, keep your white hover transition */
+a:hover {
+    color: #ffffff !important;
+}
+
+/* Ensure headings in portfolio items match your theme */
+.portfolio-item h3 {
+    color: #FFFF00 !important; /* Yellow for headings */
+}
 

@@ -1089,7 +1089,7 @@ body {
   xxxfont-size: 14px;
   font-size: 10px;
   line-height: 1.42857143;
-  color: #000;
+  color: #ddd;
   background-color: #fff;
   letter-spacing:1.5px;
 }
@@ -1203,7 +1203,7 @@ h6,
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color:#000;
+  color:#ddd;
 }
 @media (min-width: 480px) {
   h1,
