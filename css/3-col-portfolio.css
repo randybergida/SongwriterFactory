@@ -298,6 +298,18 @@ a:hover {
     cursor: pointer;
 }
 
+/* Adjusts the space below the logo */
+.header-area {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/* Specifically target the H1 if the spacing is coming from there */
+.page-header {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important; /* Set this to your preference */
+}
+
 /* Apply bottom margin only on small screens where items stack */
 @media (max-width: 767px) {
     .three-col-item:not(:last-child) {
