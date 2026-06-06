@@ -111,6 +111,21 @@ padding-bottom: 20px
     border-bottom: 2px solid #ffffff;
 }
 
+.bio-nav-button {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #FFFF00; 
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #FFFF00;
+    transition: all 0.3s ease;
+}
+
+.bio-nav-button:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
 
 .nav-link {
     display: block;
@@ -283,3 +298,7 @@ a:hover {
     color: #FFFF00 !important; /* Yellow for headings */
 }
 
+.page-header a {
+    display: inline-block;
+    cursor: pointer;
+}
