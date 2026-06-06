@@ -293,12 +293,15 @@ a:hover {
     color: #ffffff !important;
 }
 
-/* Ensure headings in portfolio items match your theme */
-.portfolio-item h3 {
-    color: #FFFF00 !important; /* Yellow for headings */
-}
-
 .page-header a {
     display: inline-block;
     cursor: pointer;
 }
+
+/* Apply bottom margin only on small screens where items stack */
+@media (max-width: 767px) {
+    .three-col-item:not(:last-child) {
+        margin-bottom: 10px; /* Adjust 25px to the amount of space you want */
+    }
+}
+
