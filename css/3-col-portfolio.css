@@ -27,7 +27,7 @@ text-align:center;
 }
 @media (min-width: 768px) {
 .row {
-text-align:left;
+text-align:left !important;
 }
 }
 
@@ -343,5 +343,17 @@ a:hover {
     /* 3. Tighten space between last 3-col item and Bio H2 */
     .row-divider {
         margin-top: 20px !important;
+    }
+}
+
+/* Hide the break by default */
+.mobile-break {
+    display: none;
+}
+
+/* Activate the break only on mobile/tablet stack */
+@media (max-width: 767px) {
+    .mobile-break {
+        display: block;
     }
 }
