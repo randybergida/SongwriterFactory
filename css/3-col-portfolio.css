@@ -357,3 +357,22 @@ a:hover {
         display: block;
     }
 }
+
+/* 1. Default: Hide the break (Desktop) */
+.mobile-break {
+    display: none;
+}
+
+/* 2. Tablet range: Show the break to keep titles balanced */
+@media (min-width: 481px) and (max-width: 767px) {
+    .mobile-break {
+        display: block;
+    }
+}
+
+/* 3. Mobile stack (480px and below): Hide the break again to force one line */
+@media (max-width: 480px) {
+    .mobile-break {
+        display: none;
+    }
+}
