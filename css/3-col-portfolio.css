@@ -310,6 +310,16 @@ a:hover {
     margin-bottom: 10px !important; /* Set this to your preference */
 }
 
+/* This ensures the image behaves exactly the same in both headers */
+.page-header a {
+    display: block;
+    line-height: 0;
+}
+
+.page-header img {
+    display: block;
+}
+
 /* Apply bottom margin only on small screens where items stack */
 @media (max-width: 767px) {
     .three-col-item:not(:last-child) {
