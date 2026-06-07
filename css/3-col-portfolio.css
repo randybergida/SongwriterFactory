@@ -326,3 +326,22 @@ a:hover {
         margin-bottom: 10px; /* Adjust 25px to the amount of space you want */
     }
 }
+
+/* --- MOBILE PORTRAIT SPACING FIXES --- */
+
+@media (max-width: 767px) {
+    /* 1. Tighten space under logo */
+    .page-header {
+        margin-bottom: 0px !important;
+    }
+    
+    /* 2. Tighten space under each 3-col item */
+    .three-col-item {
+        margin-bottom: 10px !important; 
+    }
+
+    /* 3. Tighten space between last 3-col item and Bio H2 */
+    .row-divider {
+        margin-top: 20px !important;
+    }
+}
