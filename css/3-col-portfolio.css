@@ -411,8 +411,16 @@ a:hover {
 }
 
 /* --- MOBILE TUNE-UP: Only enlarge bio-text class --- */
+@media only screen and (max-width: 768px) {
+    .inventory {
+        font-size: 13px !important;
+        line-height: 1.6 !important;
+    }
+}
+
+/* --- MOBILE TUNE-UP: Only enlarge bio-text class --- */
 @media only screen and (max-width: 600px) {
-    .lesson-list, .inventory {
+    .lesson-list {
         font-size: 13px !important;
         line-height: 1.6 !important;
     }
