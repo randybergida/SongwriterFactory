@@ -92,7 +92,7 @@ display:block;
 h3 {
     font-size: 1.5rem;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -403,9 +403,17 @@ a:hover {
 }
 
 /* --- MOBILE TUNE-UP: Only enlarge bio-text class --- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .bio-text {
         font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+}
+
+/* --- MOBILE TUNE-UP: Only enlarge bio-text class --- */
+@media only screen and (max-width: 600px) {
+    .lesson-list, .inventory {
+        font-size: 13px !important;
         line-height: 1.6 !important;
     }
 }
