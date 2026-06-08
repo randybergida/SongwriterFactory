@@ -4,6 +4,22 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/* --- GLOBAL TEXT TUNE-UP --- */
+body, p, a {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 300 !important;
+}
+
+.inventory, .lesson-list, .other-text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+/* Keep buttons and headers bold for better readability/action */
+.production-link, .bio-nav-button, .nav-link, h1, h2, h3 {
+    font-weight: 700 !important;
+}
+
 /* --- GLOBAL DARK THEME --- */
 body {
     background-color: #000 !important;
@@ -364,15 +380,24 @@ a:hover {
 }
 
 /* 2. Tablet range: Show the break to keep titles balanced */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 600px) and (max-width: 767px) {
     .mobile-break {
         display: block;
     }
 }
 
 /* 3. Mobile stack (480px and below): Hide the break again to force one line */
-@media (max-width: 480px) {
+@media (max-width: 599px) {
     .mobile-break {
         display: none;
     }
+}
+
+
+.portfolio-item .bio-text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;          /* The new sweet spot */
+    line-height: 1.5;         /* Tight, professional spacing */
+    letter-spacing: 0.3px;    /* A subtle, refined balance */
+    font-weight: 300;         /* Keeps the aesthetic light and elegant */
 }
