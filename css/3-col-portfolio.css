@@ -401,3 +401,11 @@ a:hover {
     letter-spacing: 0.3px;    /* A subtle, refined balance */
     font-weight: 300;         /* Keeps the aesthetic light and elegant */
 }
+
+/* --- MOBILE TUNE-UP: Only enlarge bio-text class --- */
+@media only screen and (max-width: 600px) {
+    .bio-text {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+    }
+}
