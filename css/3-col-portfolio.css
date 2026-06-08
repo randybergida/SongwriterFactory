@@ -48,7 +48,7 @@ display:block;
 .desktop {
 display:none;
 }
-@media (min-width: 480px) {
+@media (min-width: 600px) {
   .mobile {
 display:none;
 }
@@ -257,7 +257,7 @@ footer .col-lg-12 {
 
 
 /* This targets ONLY the three lesson columns */
-@media (min-width: 480px) {
+@media (min-width: 600px) {
     .three-col-item {
         width: 33.333333% !important;
         float: left !important;
@@ -265,7 +265,7 @@ footer .col-lg-12 {
 }
 
 /* Constrain the entire contents of the left column to a readable, centered block */
-@media (min-width: 480px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 991px) {
     .col-md-7.portfolio-item {
         max-width: 600px;
         margin-left: auto;
