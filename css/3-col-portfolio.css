@@ -195,7 +195,7 @@ padding-bottom: 20px
 
 /* This targets all H2s inside portfolio items on all pages */
 .portfolio-item h2 {
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
     line-height: 1.2;
     margin-bottom: 2rem;
     font-weight: bold;
@@ -206,7 +206,7 @@ padding-bottom: 20px
 .bio-bridge {
     margin-top: 20px;      /* Increased top space for separation */
     margin-bottom: 30px;   /* Increased space before buttons */
-    font-size: 1.5rem;     /* Slightly larger than standard bio text */
+    font-size: 1.6rem;     /* Slightly larger than standard bio text */
     font-weight: bold;     /* Added emphasis */
     color: #ddd;           /* Default for mobile */
 }
@@ -426,4 +426,19 @@ a:hover {
         font-size: 13px !important;
         line-height: 1.6 !important;
     }
+}
+
+/* Apply arrows to both button variations */
+.bio-nav-button::after, 
+.nav-link::after {
+    content: " ↗";
+    font-size: 0.85em;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+/* Ensure the arrow turns white on hover for both */
+.bio-nav-button:hover::after, 
+.nav-link:hover::after {
+    opacity: 1;
 }
