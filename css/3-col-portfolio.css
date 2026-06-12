@@ -428,21 +428,3 @@ a:hover {
     }
 }
 
-/* Apply arrows to both button variations */
-.bio-nav-button::after, 
-.nav-link::after {
-    content: " ↗";
-    font-size: 0.85em;
-    opacity: 0.6;
-    transition: opacity 0.3s ease;
-    /* Force specific font and color to prevent browser interference */
-    font-family: sans-serif; 
-    color: inherit;
-    text-decoration: none;
-}
-
-/* Ensure the arrow turns white on hover for both */
-.bio-nav-button:hover::after, 
-.nav-link:hover::after {
-    opacity: 1;
-}
