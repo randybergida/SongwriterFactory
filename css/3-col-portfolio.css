@@ -231,6 +231,7 @@ h2, .bio-bridge {
 
 .bio-navigation {
     text-align: left !important; /* Force left alignment */
+    margin-top: 35px;
 }
 
 @media (max-width: 767px) {
@@ -428,3 +429,31 @@ a:hover {
     }
 }
 
+/* Wrapper for the project block */
+.header-link {
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+/* Style the H3 specifically for this section */
+.header-link h3 {
+    display: inline-block; 
+    color: #FFFF00 !important;
+    border-bottom: 2px solid #FFFF00 !important;
+    
+    /* 
+       TOP MARGIN: Pushes the H3 away from the image.
+       RIGHT MARGIN: 0 
+       BOTTOM MARGIN: Adds space between the line and the list below.
+       LEFT MARGIN: 0 
+    */
+    margin: 20px 0 10px 0 !important; 
+    
+    padding: 0;
+}
+
+/* Hover effect */
+.header-link:hover h3 {
+    color: #ffffff !important;
+    border-bottom: 2px solid #ffffff !important;
+}
