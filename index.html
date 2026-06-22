@@ -26,10 +26,32 @@
 </head>
 
 <body>
-
     <!-- Page Content -->
     <div class="container">
 
+        <!-- Mobile Nav stays at the top but inside the container grid -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="visible-xs">
+                <div class="navbar-header" style="padding: 0;">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-nav" style="display: block; float: right;">
+                        <span class="icon-bar" style="background-color: #333;"></span>
+                        <span class="icon-bar" style="background-color: #333;"></span>
+                        <span class="icon-bar" style="background-color: #333;"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="mobile-nav" style="text-align: right;">
+                    <ul class="nav">
+                        <li><a href="/voicelessons">VOICE LESSONS</a></li>
+                        <li><a href="/guitarlessons">GUITAR LESSONS</a></li>
+                        <li><a href="/songwritinglessons">SONGWRITING LESSONS</a></li>
+                        <li><a href="/production">RECORDING & PRODUCTION</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        
         <!-- Page Header -->
         <div class="row">
            <div class="col-lg-12 header-area">
@@ -41,24 +63,7 @@
 </div>
         </div>
         <!-- /.row -->
-         <!-- Mobile Only Menu -->
-<div class="visible-xs">
-    <div class="navbar-header" style="padding: 0 20px 20px 20px;">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-nav" style="display: block; float: none; margin: 0 auto;">
-            <span class="icon-bar" style="background-color: #333;"></span>
-            <span class="icon-bar" style="background-color: #333;"></span>
-            <span class="icon-bar" style="background-color: #333;"></span>
-        </button>
-    </div>
-    <div class="collapse navbar-collapse" id="mobile-nav" style="text-align: center;">
-        <ul class="nav">
-            <li><a href="/voicelessons">VOICE LESSONS</a></li>
-            <li><a href="/guitarlessons">GUITAR LESSONS</a></li>
-            <li><a href="/songwritinglessons">SONGWRITING LESSONS</a></li>
-            <li><a href="/production">RECORDING & PRODUCTION</a></li>
-        </ul>
-    </div>
-</div> 
+         
         <!-- Projects Row -->
         <div class="row">
             <div class="col-xs-12 three-col-item">
