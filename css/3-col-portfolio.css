@@ -474,3 +474,59 @@ a:hover {
 .nav li a:hover {
     color: #ffffff;
 }
+/* Container and Header adjustments */
+.mobile-nav-container .navbar-header {
+    padding: 0;
+    text-align: center;
+}
+
+/* Ensure the burger button centers correctly */
+.mobile-nav-container .navbar-toggle {
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+    border: 1px solid #ddd; /* Optional: adds a slight border to the button */
+}
+
+/* Burger bar color */
+.mobile-nav-container .navbar-toggle .icon-bar {
+    background-color: #333;
+}
+
+/* Navigation list centering */
+#mobile-nav {
+    text-align: center;
+}
+
+/* Optional: Add some breathing room to the links */
+#mobile-nav .nav > li > a {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.navbar-toggle {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Optional: Removes the focus border when you tap/click the button */
+.navbar-toggle:focus {
+    outline: none !important;
+}
+
+#mobile-nav .nav > li > a {
+    font-size: 13px; /* Adjust this value to your preference */
+    padding: 10px;    /* You can also tighten the padding if needed */
+}
+
+/* Pulls the entire mobile nav container closer to the header */
+.mobile-nav-container {
+    margin-top: -25px; /* Adjust this negative value to tighten the gap */
+    margin-bottom: 5px;  /* Adjust this to create space below the burger */
+}
+
+/* Ensures the button itself isn't adding unnecessary vertical space */
+.mobile-nav-container .navbar-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
