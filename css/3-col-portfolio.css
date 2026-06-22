@@ -457,3 +457,20 @@ a:hover {
     color: #ffffff !important;
     border-bottom: 2px solid #ffffff !important;
 }
+
+/* Ensure the link background remains transparent on hover */
+.nav li a:hover, 
+.nav li a:focus {
+    background-color: transparent !important;
+}
+
+/* Set the text color and transition for all navigation links */
+.nav li a {
+    color: #FFFF00; /* Your brand yellow */
+    transition: color 0.3s ease; /* Smooth color change */
+}
+
+/* Set the white color on hover */
+.nav li a:hover {
+    color: #ffffff;
+}
