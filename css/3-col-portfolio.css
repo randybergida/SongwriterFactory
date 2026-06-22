@@ -521,7 +521,7 @@ a:hover {
 
 /* Pulls the entire mobile nav container closer to the header */
 .mobile-nav-container {
-    margin-top: -25px; /* Adjust this negative value to tighten the gap */
+    margin-top: -23px; /* Adjust this negative value to tighten the gap */
     margin-bottom: 5px;  /* Adjust this to create space below the burger */
 }
 
