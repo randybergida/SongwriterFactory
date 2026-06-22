@@ -485,7 +485,7 @@ a:hover {
     display: inline-block;
     float: none;
     margin-right: 0;
-    border: 1px solid #ddd; /* Optional: adds a slight border to the button */
+    
 }
 
 /* Burger bar color */
@@ -529,4 +529,18 @@ a:hover {
 .mobile-nav-container .navbar-header {
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+/* Force-kill potential border and shadow culprits */
+.navbar-header, 
+.navbar-collapse, 
+.mobile-nav-container,
+.nav,
+.navbar-nav {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-image: none !important; /* Sometimes lines are actually 1px images */
 }
