@@ -531,3 +531,12 @@ a:hover {
     padding-bottom: 0;
 }
 
+/* Only add what's missing */
+.bio-text a {
+    border-bottom: 1px solid #ffff00;
+}
+
+.bio-text a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
