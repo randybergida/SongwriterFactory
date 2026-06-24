@@ -99,9 +99,14 @@ h3 {
 
 
 /* Force bio text to be left-aligned on all screen sizes */
-.bio-text, .text-blurb {
+.bio-text {
     text-align: left !important;
 padding-bottom: 20px
+}
+
+.text-blurb {
+    text-align: left !important;
+padding-bottom: 5px
 }
 
 /* Base styles: Default to black for light/mobile backgrounds */
@@ -221,7 +226,7 @@ padding-bottom: 20px
 
 .bio-bridge3 {
     /* Existing Styles */
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 30px;
     font-size: 1.6rem;
     font-weight: bold;
@@ -568,7 +573,7 @@ a:hover {
 }
 
 .embed-spacer {
-    margin-bottom: 30px; /* Adjust this value to your preference */
+    margin-bottom: 50px; /* Adjust this value to your preference */
 }
 
 /* Ensure the text container matches the 350px player width */
@@ -586,5 +591,20 @@ a:hover {
     .text-blurb {
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+
+/* Hide the separator by default (for multi-column/desktop) */
+.mobile-only {
+    display: none;
+}
+
+/* Show the separator only on screens smaller than 768px (the 1-column mobile view) */
+@media (max-width: 767px) {
+    .mobile-only {
+        display: block !important;
+        border: 0;
+        border-top: 1px solid #444444; /* Adjust color to match your aesthetic */
+        margin: 10px 0;
     }
 }
