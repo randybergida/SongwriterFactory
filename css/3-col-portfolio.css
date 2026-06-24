@@ -28,7 +28,7 @@ body {
     padding-top: 0px; 
 }
 
-.bio-text, .other-text, .bio-bridge, .portfolio-item h2 {
+.bio-text, .text-blurb, .other-text, .bio-bridge, .portfolio-item h2 {
     color: #ddd !important;
 }
 
@@ -75,7 +75,7 @@ display:block;
 }
 }
 
-.bio-text {
+.bio-text, .text-blurb {
     font-size: 1.4rem;
     line-height: 1.5;
     letter-spacing: 0.5px;
@@ -99,7 +99,7 @@ h3 {
 
 
 /* Force bio text to be left-aligned on all screen sizes */
-.bio-text {
+.bio-text, .text-blurb {
     text-align: left !important;
 padding-bottom: 20px
 }
@@ -218,6 +218,33 @@ padding-bottom: 20px
     font-weight: bold;
     color: #ddd;
 }
+
+.bio-bridge3 {
+    /* Existing Styles */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ddd;
+    
+    /* Layout Logic to match the text-blurb */
+    width: 350px !important;
+    max-width: 100%;
+    text-align: left;
+    display: block;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+}
+
+/* 1-COLUMN FORMAT: Center on mobile */
+@media (max-width: 767px) {
+    .bio-bridge3 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: left;
+    }
+}
+
 /* Update your CSS to target the class combination */
 .row.row-divider {
     margin-top: 40px;
@@ -397,7 +424,7 @@ a:hover {
 }
 
 
-.portfolio-item .bio-text {
+.portfolio-item .bio-text, .text-blurb {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;          /* The new sweet spot */
     line-height: 1.5;         /* Tight, professional spacing */
@@ -407,7 +434,7 @@ a:hover {
 
 /* --- MOBILE TUNE-UPS --- */
 @media only screen and (max-width: 768px) {
-    .bio-text {
+    .bio-text, .text-blurb {
         font-size: 16px !important;
         line-height: 1.6 !important;
     }
@@ -532,11 +559,32 @@ a:hover {
 }
 
 /* Only add what's missing */
-.bio-text a {
+.bio-text a, .text-blurb a {
     border-bottom: 1px solid #ffff00;
 }
 
-.bio-text a:hover {
+.bio-text a:hover, .text-blurb a:hover {
     border-bottom: 1px solid #ffffff;
 }
 
+.embed-spacer {
+    margin-bottom: 30px; /* Adjust this value to your preference */
+}
+
+/* Ensure the text container matches the 350px player width */
+.text-blurb {
+    width: 350px !important;
+    max-width: 100%;
+    text-align: left;
+    display: block;      /* Ensures it ignores parent text-align: center */
+    margin-left: 0 !important;
+    margin-right: auto !important; 
+}
+
+/* 1-COLUMN FORMAT: Only center when the screen is very narrow */
+@media (max-width: 767px) {
+    .text-blurb {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
