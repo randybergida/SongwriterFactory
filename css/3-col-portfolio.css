@@ -608,3 +608,18 @@ a:hover {
         margin: 10px 0;
     }
 }
+
+.index-only {
+    display: block; 
+    border: 0;              /* Removes the default browser border */
+    border-top: 1px solid #222222; 
+    margin: 20px 0;         /* Increased margin for better breathing room */
+    height: 0;              /* Ensures no extra height is added */
+}
+
+/* Add extra space under the HR on smaller screens */
+@media only screen and (max-width: 767px) {
+    .index-only {
+        margin: 20px 0 40px 0; /* Top/Right/Bottom/Left - gives 40px at the bottom */
+    }
+}
