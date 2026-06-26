@@ -612,7 +612,7 @@ a:hover {
 .index-only {
     display: block; 
     border: 0;              /* Removes the default browser border */
-    border-top: 1px solid #999; 
+    border-top: 1px solid #888; 
     margin: 20px 0;         /* Increased margin for better breathing room */
     height: 0;              /* Ensures no extra height is added */
 }
